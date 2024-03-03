@@ -8,13 +8,16 @@ import java.util.*;
  * @version 1.0 03/03/2024
  */
 public class Agenda {
-    private List<Contacto> contacts; // Lista que almacena los contactos
     /**
-     * Constructor de la clase Agenda
+     * Lista que almacena los contactos
+     */
+    private List<Contacto> contacts;
+    /**
+     * Constructor de la clase Agenda donde se inicializa la lista de contactos
      */
     public Agenda() {
         this.contacts = new ArrayList<>();
-    }// Inicializa lista
+    }// Inicializa una lista vacia de contactos
 
     /**
      * Método para añadir un nuevo contacto a la agenda

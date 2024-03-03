@@ -4,17 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Clase que representa los datos de un contacto en una agenda.
+ * Clase que representa los datos de un contacto en una agenda
  * @author Miguel Ángel Guerrero Lázaro
  * @version 1.0 03/03/2024
  */
 
 class Contacto {
-    private String name; //Nombre del contacto
-    private List<String> phones; //Lista de los nº de teléfono del contacto
+    /**
+     * Nombre del contacto
+     */
+    private String name;
+
+    /**
+     * Lista de los nº de teléfono del contacto
+     */
+     private List<String> phones;
 
     /**
      * Constructor de la clase Contacto
+     * inicializa nombre y lista de telefonos
+     * y se añade el primer nº de teléfono del contacto
      * @param name  Nombre del contacto
      * @param phone Nº de teléfono del contacto
      */
@@ -25,8 +34,8 @@ class Contacto {
     }
 
     /**
-     * Método para obtener el nombre del contacto.
-     * @return Nombre del contacto.
+     * Método para obtener el nombre del contacto
+     * @return Nombre del contacto
      */
     public String getName() {
         return this.name;
