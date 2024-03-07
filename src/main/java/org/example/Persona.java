@@ -9,19 +9,19 @@ import java.util.List;
  * @version 1.0 03/03/2024
  */
 
-class Contacto {
+class Persona {
     private String name;
 
     private List<String> phones;
 
     /**
-     * Constructor de la clase Contacto
+     * Constructor de la clase Persona
      * inicializa nombre y lista de telefonos
      * y se añade el primer nº de teléfono del contacto
      * @param name  Nombre del contacto
      * @param phone Nº de teléfono del contacto
      */
-    public Contacto(String name, String phone) {
+    public Persona(String name, String phone) {
         this.setName(name); // Inicializa Nombre
         this.setPhones(new ArrayList<>()); // Inicializa lista de teléfonos
         this.getPhones().add(phone);//añade primer nº de telefono
