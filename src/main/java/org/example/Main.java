@@ -7,6 +7,15 @@ public class Main {
         // Crear una nueva agenda.
         Agenda agendaContactos = new Agenda();
 
+        initAgenda(agendaContactos);
+
+        System.out.println("\nDespués de añadir, eliminar y modificar contactos: ");
+        for (Contacto c : agendaContactos.getContacts()) {
+            System.out.println(c.getName() + " -> " + c.getPhones());
+        }
+    }
+
+    private static void initAgenda(Agenda agendaContactos) {
         // Añadir contactos a la agenda
         agendaContactos.addContact("John Doe", "1234567890");
         agendaContactos.addContact("Jane Doe", "9876543210");
@@ -26,10 +35,5 @@ public class Main {
 
         // Modificar el teléfono de un contacto existente en la agenda
         agendaContactos.modifyPhoneNumber("John Doe", "1234567890", "6666666666");
-
-        System.out.println("\nDespués de añadir, eliminar y modificar contactos: ");
-        for (Contacto c : agendaContactos.getContacts()) {
-            System.out.println(c.getName() + " -> " + c.getPhones());
-        }
     }
 }
